@@ -17,26 +17,41 @@ class _NavigationBarWebState extends State<NavigationBarWeb> {
     return Container(
       height: 75.0,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        mainAxisSize: MainAxisSize.max,
         children: [
-          NavigationItem(
-            selected: index == 0,
-            title: 'Home',
-            routeName: routeHome,
-            onHighlight: onHighlight,
-          ),
-          NavigationItem(
-            selected: index == 1,
-            title: 'About',
-            routeName: routeAbout,
-            onHighlight: onHighlight,
-          ),
-          NavigationItem(
-            selected: index == 2,
-            title: 'Contact',
-            routeName: routeContacts,
-            onHighlight: onHighlight,
+          Expanded(
+              flex: 1,
+              child: Padding(
+                  padding: EdgeInsets.only(left: 32.0),
+                  child: Text(
+                    "OUMI",
+                    style: TextStyle(fontSize: 24.0),
+                  ))),
+          Expanded(
+            flex: 2,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                NavigationItem(
+                  selected: index == 0,
+                  title: 'Home',
+                  routeName: routeHome,
+                  onHighlight: onHighlight,
+                ),
+                NavigationItem(
+                  selected: index == 1,
+                  title: 'About',
+                  routeName: routeAbout,
+                  onHighlight: onHighlight,
+                ),
+                NavigationItem(
+                  selected: index == 2,
+                  title: 'Contact',
+                  routeName: routeContacts,
+                  onHighlight: onHighlight,
+                ),
+              ],
+            ),
           ),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:oumi/components/carousel.dart';
 import 'package:oumi/screens/products.dart';
+import 'package:oumi/helper/images.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -57,13 +58,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Row(
                         children: <Widget>[
-                          ImageIcon(AssetImage("icons/instagram.png")),
+                          ImageIcon(AssetImage("images/icons/instagram.png")),
                           Text("oumi.label"),
                         ],
                       ),
                       Row(
                         children: <Widget>[
-                          ImageIcon(AssetImage("icons/shopee.png")),
+                          ImageIcon(AssetImage("images/icons/shopee.png")),
                           Text(
                             "Shopee",
                           ), // https://shopee.co.id/oumi.label?categoryId=100014&entryPoint=ShopByPDP&itemId=13806170246&upstream=search

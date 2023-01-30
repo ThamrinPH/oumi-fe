@@ -36,29 +36,37 @@ class products extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
-                  child:
-                      Image.asset('images/pexels-michael-burrows-7147604.jpg'),
+                  child: Image.asset(
+                    'images/1.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
-                  child:
-                      Image.asset('images/pexels-michael-burrows-7147604.jpg'),
+                  child: Image.asset(
+                    'images/2.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
-                  child:
-                      Image.asset('images/pexels-michael-burrows-7147604.jpg'),
+                  child: Image.asset(
+                    'images/3.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
-                  child:
-                      Image.asset('images/pexels-michael-burrows-7147604.jpg'),
+                  child: Image.asset(
+                    'images/4.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ],
